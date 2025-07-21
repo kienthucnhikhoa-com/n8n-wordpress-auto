@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: n8n-wordpress
+    env: docker
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: WEBHOOK_URL
+        value: https://n8n-wordpress.onrender.com
+      - key: GENERIC_TIMEZONE
+        value: Asia/Ho_Chi_Minh
+      - key: N8N_BASIC_AUTH_USER
+        value: admin
+      - key: N8N_BASIC_AUTH_PASSWORD
+        value: Adsense@2025.
